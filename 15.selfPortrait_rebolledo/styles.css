@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('images/self_portrait.jpg') no-repeat top center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.textbox {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
