@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('images/aiPainting.jpg') no-repeat center center fixed;
+    background-size: 80%; /* Enlarges the image by 40% */
+    background-position: center;
+    background-color: black; /* Fallback color for empty spaces */
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+    overflow: hidden; /* Prevents scrolling if the image extends beyond the screen */
+}
+
+.textbox {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: right;
+    max-width: 40%;
+}
