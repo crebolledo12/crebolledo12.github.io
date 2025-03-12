@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slideshow {
+    position: absolute;
+    width: 100%;
+    height: 1100%; /* 11 images stacked vertically */
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 3em;
+    font-family: 'Kunstler Script', cursive;
+    padding: 20px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px grey;
+}
+
+/* Assigning different backgrounds for each slide */
+#slide1 { background-image: url('images/image1.jpg'); }
+#slide2 { background-image: url('images/image2.jpg'); }
+#slide3 { background-image: url('images/image3.jpg'); }
+#slide4 { background-image: url('images/image4.jpg'); }
+#slide5 { background-image: url('images/image5.jpg'); }
+#slide6 { background-image: url('images/image6.jpg'); }
+#slide7 { background-image: url('images/image7.jpg'); }
+#slide8 { background-image: url('images/image8.jpg'); }
+#slide9 { background-image: url('images/image9.jpg'); }
+#slide10 { background-image: url('images/image10.jpg'); }
+#slide11 { background-image: url('images/image11.jpg'); }
