@@ -1,57 +1,40 @@
-/* Set body and html to occupy full viewport and remove default margin and padding */
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+/* styles.css */
+/* Make the body and html take full height and remove margins */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
-/* Style for the full-screen background video */
-#background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+/* Fullscreen video styling */
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
-/* Style for the quote box */
-.quote-box {
-    position: absolute;
-    top: 45%;
-    left: -200px; /* Initially placed off-screen */
-    transform: translateY(-50%); /* Vertically center the box */
-    background-color: rgba(0, 98, 65);
-    color: black;
-    font-weight: bold;
-    font-style: italic;
-    padding: 20px;
-    font-size: 1.5rem;
-    text-align: center;
-    border-radius: 50%; /* Make it circular */
-    width: 200px; /* Set fixed width */
-    height: 200px; /* Set fixed height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    /* Add animation for moving left to right */
-    animation: moveLeftToRight 10s linear infinite;
-}
-
-/* Keyframes for moving the quote box left to right */
-@keyframes moveLeftToRight {
-    0% {
-        left: -200px; /* Start off-screen to the left */
-    }
-    50% {
-        left: 50%; /* Centered horizontally */
-        transform: translateX(-50%) translateY(-50%); /* Keep it centered */
-    }
-    100% {
-        left: 100%; /* Move off-screen to the right */
-    }
+/* Centered dark green circular text box on screen */
+.text-box {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: red;
+  color: white;
+  width: 225px;
+  height: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+  text-align: center;
+  user-select: none;
 }
