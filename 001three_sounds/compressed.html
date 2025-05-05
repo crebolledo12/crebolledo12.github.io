@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=UTF-8 />
+<meta name=viewport content="width=device-width, initial-scale=1.0" />
+<title>Fullscreen Video with Audio Buttons</title>
+<link href=001_three_sounds/styles.css rel=stylesheet type=text/css>
+<link href=styles.css rel=stylesheet type=text/css>
+</head>
+<body>
+<video id=background-video loop muted>
+<source src=videos/final.mp4 type=video/mp4>
+Your browser does not support HTML5 video.
+</video>
+<div class=buttons>
+<button class=audio-button onclick="selectAudio('audio1')">Audio 1</button>
+<button class=audio-button onclick="selectAudio('audio2')">Audio 2</button>
+<button class=audio-button onclick="selectAudio('audio3')">Audio 3</button>
+</div>
+<audio id=audio1 src=audios/taste-of-madison.m4a loop></audio>
+<audio id=audio2 src=audios/track2.mp4 loop></audio>
+<audio id=audio3 src=audios/track3.mp4 loop></audio>
+<script>const video=document.getElementById('background-video');const audioElements=[document.getElementById('audio1'),document.getElementById('audio2'),document.getElementById('audio3')];let initialized=false;function selectAudio(activeId){if(!initialized){video.play();audioElements.forEach(audio=>{audio.volume=0;audio.play();});initialized=true;}
+audioElements.forEach(audio=>{audio.volume=(audio.id===activeId)?1:0;});}</script>
+</body>
+</html>
