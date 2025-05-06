@@ -1,0 +1,27 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+  z-index: -1;
+}
+
+.textbox {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+}
